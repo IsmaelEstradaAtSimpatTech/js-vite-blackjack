@@ -15,7 +15,7 @@ if ( a > 10 ) {
 
 const hoy = new Date();
 let dia  = hoy.getDay();
-console.log( { dia } );
+console.log( { dia, hoy } );
 
 
 
@@ -36,7 +36,22 @@ if( dia === 0 ) { // igualdad de valor y tipo de datos
 } else if( dia === 1 ) {
         console.log(' dia === 1: Hoy es lunes!');
     } else {
-        console.log('  Hoy no es domingo, ni lunes');
+        console.log('  Hoy no es domingo ni lunes');
     }
 
 console.log('fin de programa');
+
+const diasSemanaObjeto = {
+    0:'domingo',
+    1:'lunes',
+    2:'martes',
+    3:'miércoles',
+    4:'jueves',
+    5:'viernes',
+    6:'sábado',
+}
+const diasSemanaArreglo = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+
+//dia de la semana
+console.log( diasSemanaArreglo[dia] || 'Dia no definido');
+console.log( diasSemanaObjeto[dia] || 'Dia no definido');
