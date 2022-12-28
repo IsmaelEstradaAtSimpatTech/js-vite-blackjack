@@ -44,8 +44,22 @@ class Person {
 
 }
 
-const spiderman = new Person('Peter Parker', 'Spiderman', 'I am your friendly neoghbor spiderman');;
-const ironman = new Person('Tony Stark', 'Ironman', 'I am ironman');
+class Hero extends Person {
+    league = 'no league';
+
+    constructor(name, code, phrase, league) {
+        super(name, code, phrase);
+        this.league = league;
+    }
+
+    whoami() {
+        super.whoami();
+        console.log(`and have joined the ${this.league}`)
+    }
+}
+
+const spiderman = new Hero('Peter Parker', 'Spiderman', 'I am your friendly neoghbor spiderman', 'Avengers');;
+const ironman = new Hero('Tony Stark', 'Ironman', 'I am ironman', 'Avengers2');
 console.log( {spiderman} );
 console.log( {ironman} );
 
