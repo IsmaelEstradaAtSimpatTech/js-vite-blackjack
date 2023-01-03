@@ -6,7 +6,9 @@ import _ from 'underscore';
  * @param {array<string>} tiposEspeciales 
  * @returns {array}
  */
-export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
+export const crearDeck = () => {
+    const tiposDeCarta      = ['C','D','H','S'];
+    const tiposEspeciales = ['A','J','Q','K'];
 
     let newDeck = [];
 
