@@ -1,4 +1,4 @@
-import { pedirCarta } from './';
+import { crearCartaHTML, pedirCarta } from './';
 import { valorCarta } from './';
 
 /**
@@ -8,8 +8,10 @@ import { valorCarta } from './';
  * @param {HTMLelement} divCartasComputadora
  * @param {number} puntosMinimos 
  */
-export const turnoComputadora = ( deck, puntosHTML, divCartasComputadora, puntosMinimos ) => {
+export const turnoComputadora = ( deck = [], puntosHTML, divCartasComputadora, puntosMinimos ) => {
 
+    if ( !puntosMinimos ) throw new Error('Los puntos mínimos son necesarios para el turno de computadora');
+    if ( !puntosHTML ) throw new Error('puntosHTML es necesario para el turno de computadora');
     let puntosComputadora = 0;
 
     do {
@@ -19,9 +21,7 @@ export const turnoComputadora = ( deck, puntosHTML, divCartasComputadora, puntos
         puntosHTML[1].innerText = puntosComputadora;
         
         // <img class="carta" src="assets/cartas/2C.png">
-        const imgCarta = document.createElement('img');
-        imgCarta.src = `assets/cartas/${ carta }.png`; //3H, JD
-        imgCarta.classList.add('carta');
+        const imgCarta = crearCartaHTML( carta );
         divCartasComputadora.append( imgCarta );
 
         if( puntosMinimos > 21 ) {
