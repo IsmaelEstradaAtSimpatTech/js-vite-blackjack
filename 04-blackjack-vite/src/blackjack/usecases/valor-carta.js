@@ -1,7 +1,7 @@
 /**
  * Calculates numeric value of the provided card
- * @param {string} carta 
- * @returns {number}
+ * @param {String} carta 
+ * @returns {Number}
  */
 export const valorCarta = ( carta ) => {
 

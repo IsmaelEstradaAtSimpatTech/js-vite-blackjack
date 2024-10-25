@@ -3,10 +3,10 @@ import { valorCarta } from './';
 
 /**
  * executes the computer play
- * @param {array<string>} deck 
+ * @param {Array<String>} deck 
  * @param {HTMLelement} puntosHTML
  * @param {HTMLelement} divCartasComputadora
- * @param {number} puntosMinimos 
+ * @param {Number} puntosMinimos 
  */
 export const turnoComputadora = ( deck = [], puntosHTML, divCartasComputadora, puntosMinimos ) => {
 

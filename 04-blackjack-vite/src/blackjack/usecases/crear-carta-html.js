@@ -1,5 +1,5 @@
 /**
- * @param {string} carta
+ * @param {String} carta
  * @returns {HTMLImageElement} imagen de retorno
  */
 export const crearCartaHTML = ( carta ) => {

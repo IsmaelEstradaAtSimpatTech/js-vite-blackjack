@@ -2,9 +2,9 @@ import _ from 'underscore';
 
 /**
  * Creates a new shuffled deck
- * @param {array<string>} tiposDeCarta 
- * @param {array<string>} tiposEspeciales 
- * @returns {array}
+ * @param {Array<String>} tiposDeCarta ejemplo: ['C','D','H','S']
+ * @param {Array<String>} tiposEspeciales ejemplo ['A','J','Q','K']
+ * @returns {Array<String>} Returns a new shuffled deck
  */
 export const crearDeck = () => {
     const tiposDeCarta      = ['C','D','H','S'];

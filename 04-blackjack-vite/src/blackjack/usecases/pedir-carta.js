@@ -1,7 +1,7 @@
 /**
  * Gives a card out of the provided deck
- * @param {array<string>} deck 
- * @returns {string}
+ * @param {Array<String>} deck 
+ * @returns {String}
  */
 export const pedirCarta = (deck) => {
 
