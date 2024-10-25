@@ -1,4 +1,5 @@
 /**
+ * Crea el elemento HTML imagen de una carta.
  * @param {String} carta
  * @returns {HTMLImageElement} imagen de retorno
  */

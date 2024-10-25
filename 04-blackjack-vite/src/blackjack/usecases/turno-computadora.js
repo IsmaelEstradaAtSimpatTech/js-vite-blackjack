@@ -11,7 +11,7 @@ import { valorCarta } from './';
 export const turnoComputadora = ( deck = [], puntosHTML, divCartasComputadora, puntosMinimos ) => {
 
     if ( !puntosMinimos ) throw new Error('Los puntos mínimos son necesarios para el turno de computadora');
-    if ( !puntosHTML ) throw new Error('puntosHTML es necesario para el turno de computadora');
+    if ( !puntosHTML ) throw new Error('Argumento puntosHTML es necesario para el turno de computadora');
     let puntosComputadora = 0;
 
     do {
